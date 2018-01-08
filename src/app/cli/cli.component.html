@@ -1,0 +1,10 @@
+<div id="jsi-cliLog" class="g-cli__wrapper" (click)="focus()">
+  <pre [innerHTML]="cliLog"></pre>
+
+  <form (submit)="addLog()" novalidate>
+    <span>$</span>
+    <input id="jsi-cliValue" type="text" name="cliValue" [(ngModel)]="cliValue" />
+  </form>
+</div>
+
+<input type="hidden" [value]="fetchingForScrolling()" />

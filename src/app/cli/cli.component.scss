@@ -1,0 +1,62 @@
+:host /deep/ .g-cli__wrapper {
+  overflow: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 4px 6px;
+  background-color: #000000;
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 1.25;
+  color: #FFFFFF;
+
+  > pre,
+  > pre > a,
+  > pre > span,
+  > pre > em {
+    font-family: inherit;
+    font-size: inherit;
+    font-style: normal;
+  }
+
+  > pre > span,
+  > form > span {
+    color: lightgreen;
+  }
+
+  > pre {
+    margin-bottom: 1em;
+    white-space: pre-line;
+    word-break: break-all;
+
+    > a {
+      color: lightblue;
+    }
+
+    > em {
+      color: red;
+    }
+  }
+
+  > form {
+    font-size: 0;
+
+    > span,
+    > input {
+      display: inline-block;
+      font-family: inherit;
+      font-size: 14px;
+    }
+
+    > input {
+      width: calc(100vw - 1em * 3 - 0.5em);
+      margin-left: 0.5em;
+      border: 0;
+      outline: 0;
+      background-color: inherit;
+      color: inherit;
+    }
+  }
+}
