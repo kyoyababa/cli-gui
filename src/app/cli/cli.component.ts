@@ -128,6 +128,8 @@ export class CliComponent implements OnInit {
 
 
   public fetchingForScrolling(): void {
+    if (window.getSelection().toString()) return;
+
     document.getElementById('jsi-cliLog').scrollTop = Number.MAX_SAFE_INTEGER;
   }
 
