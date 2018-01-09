@@ -199,7 +199,7 @@ ${list}`;
       case '-l': {
         let targetCats = this.cats;
 
-        for (let i = 2; i < commands.length; i++) {
+        for (let i = 2; i < commands.length - 2; i++) {
           switch (commands[i]) {
             case '--country':
               if (!commands[i + 1]) {
